@@ -1,0 +1,6 @@
+{
+  "name": "OmniLisp Web",
+  "description": "A web-based LISP interpreter and polyglot concept compiler.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

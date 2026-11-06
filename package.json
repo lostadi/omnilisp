@@ -1,0 +1,48 @@
+{
+  "name": "omnilisp",
+  "version": "1.0.0",
+  "description": "An experimental Lisp workbench with an interpreter, debugger, call graphs, and source generation.",
+  "type": "module",
+  "bin": {
+    "omnilisp": "./bin/omnilisp.js"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "vite --port=3000 --host=127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "cli": "node --import tsx ./bin/omnilisp.js",
+    "test": "node --import tsx --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "d3": "^7.9.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  },
+  "private": true,
+  "author": "Lee Daghlar Ostadi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostadi/omnilisp.git"
+  },
+  "homepage": "https://github.com/lostadi/omnilisp#readme",
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}
